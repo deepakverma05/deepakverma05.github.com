@@ -1,11 +1,12 @@
 
 body {
-  background: #f6f6f6;
-  color: #0e0500;
-  font-size: 14px;
-  line-height: 23px;
+background: #f6f6f6;
+color: #0e0500;
+font-size: 14px;
+line-height: 23px;
+width: 100%;
+margin: 0 auto;
 }
-
 .container {
   position: relative;
   margin: 0 auto;
@@ -411,14 +412,7 @@ header .container nav a:active {
 
 }
 
-
-/* ============================================================================
-   Header: Screens where height < 900px
-   ========================================================================= */
-
-@media screen and (max-height: 900px) {
-
-  .topbar {
+ .topbar {
     background: #fff;
   }
 
@@ -469,9 +463,17 @@ header .container nav a:active {
     top: 150px;
   }
 
+/* ============================================================================
+   Header: Screens where height < 900px
+   ========================================================================= */
+
+@media screen and (max-height: 900px) {
+
+ 
 }
  .header-home-boxes {
-    top: -350px;
+    top: 37%;
+	left: 10%;
     opacity:0.7; 
     filter: alpha(opacity = 70); 
   }
@@ -1016,17 +1018,16 @@ right: -130px;
 	text-shadow:1px 1px 1px #000;
 	display:inline;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.header-home-boxes{
-	top:-50%;
-	}
+.Headertext span{
+	font-size:21px;color:#888888;text-shadow:none; border-left:1px solid #ccc;
 }
+
 @media screen and (max-width : 1024px){
 	.container {
-		position: relative;
-		margin: 0 auto;
-		width: 940px;
-		padding: 0 20px 0 20px;
+	position: relative;
+	margin: 0 auto;
+	width: 96%;
+	padding: 0 2% 0 2%;
 	}
 	#wrapperinnercontmain{
 		width: 910px;
