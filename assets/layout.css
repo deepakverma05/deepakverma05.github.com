@@ -361,21 +361,7 @@ header .container nav a:active {
 
 .header-home-boxes {
   position: absolute;
-  width: 330px;
-  height: 260px;
-  background: url(../images/bg-home-topimage-box.png) 0 0 no-repeat;
-  top: -440px;
-  padding: 40px;
-
-  /*
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-left-radius: 0;
-   */
+  width: 30%;
 }
 /* Fix for Webkit position error */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
