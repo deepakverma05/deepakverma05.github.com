@@ -2,7 +2,7 @@
 body {
 background: #f6f6f6;
 color: #0e0500;
-font-size: 14px;
+font-size: 1em;
 line-height: 23px;
 width: 100%;
 margin: 0 auto;
@@ -535,29 +535,20 @@ background: linear-gradient(to bottom, #00622f 0%,#b7dc7c 0.4%, #fff 12%);
 
 .home-intro {
   position: relative;
-  color: #212121;
-  background: url(../images/bg-home-intro.png) no-repeat 0 0;
-
-  /*
-  -webkit-border-top-right-radius: 30px;
-  -moz-border-radius-topright: 30px;
-  border-top-right-radius: 30px;
-   */
-
-  font-size: 16px;
-  line-height: 26px;
-  padding: 40px 95px 80px 95px;
-
-  margin-top: -50px;
-  *margin-top: 0; /* IE7 and below */
+	color: #212121;
+	background: url(../images/bg-home-intro.png) no-repeat 0 0;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 40px 10% 80px 10%;
+	margin-top: -50px;
 }
 
 .home-intro > .hd {
 	width: 100%;
 	color: #303030;
 	margin: 10px 0 25px 0;
-	font-size: 25px;
-	line-height: 1.3;
+	font-size: 155%;
+	line-height: 135%;
 }
 
 .home-intro > .bd {
