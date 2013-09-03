@@ -534,13 +534,15 @@ background: linear-gradient(to bottom, #00622f 0%,#b7dc7c 0.4%, #fff 12%);
    ========================================================================= */
 
 .home-intro {
-  position: relative;
-	color: #212121;
-	background: url(../images/bg-home-intro.png) no-repeat 0 0;
-	font-size: 16px;
-	line-height: 26px;
-	padding: 40px 10% 80px 10%;
-	margin-top: -50px;
+position: relative;
+color: #212121;
+background: url(../images/bg-home-intro.png) no-repeat 0 0;
+font-size: 16px;
+line-height: 26px;
+padding: 40px 10% 80px 10%;
+margin-top: -50px;
+width: 80%;
+background-size: 100%;
 }
 
 .home-intro > .hd {
@@ -552,32 +554,32 @@ background: linear-gradient(to bottom, #00622f 0%,#b7dc7c 0.4%, #fff 12%);
 }
 
 .home-intro > .bd {
-  width: 37%;
-  color: #303030;
-  margin: 37px 0 10px 0;
-  font-size: 36px;
-  line-height: 1.1;
-  text-transform: uppercase;
-  font-weight: 300;
+width: 40%;
+color: #303030;
+margin: 37px 0 10px 0;
+line-height: 1.1;
+text-transform: uppercase;
+font-weight: 300;
+height: 10em;
 }
-
 .home-section-list {
-  width: 410px;
-  padding: 33px 20px 20px 20px;
-  float: right;
+width: 50%;
+padding: 40px 5% 20px 5%;
+float: right;
 }
 
 .home-section-list li {
-  padding: 2px 8px;
+  padding: 1px 0px;
 }
 
 .home-section-list a {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 0.01em;
-  color: #212121;
-
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	color: #212121;
+	display: block;
+	width:100%;
 }
 
 .home-section-list .col-1 {
@@ -1031,5 +1033,45 @@ right: -130px;
 	}
 	.header-home-boxes {
 	width: 30%;
+	}
+	.home-intro > .hd {
+	font-size: 100%;
+	line-height: 110%;
+	}
+}
+@media screen and (max-width : 1024px){
+	.home-intro > .hd {
+	font-size: 155%;
+	line-height: 135%;
+	}
+}
+@media screen and (max-width : 960px){
+	.home-intro > .hd {
+	font-size: 145%;
+	line-height: 125%;
+	}
+}
+@media screen and (max-width : 640px){
+	.home-intro > .hd {
+	font-size: 135%;
+	line-height: 115%;
+	}
+}
+@media screen and (max-width : 480px){
+	.home-intro > .hd {
+	font-size: 125%;
+	line-height: 110%;
+	}
+}
+@media screen and (max-width : 480px){
+	.home-intro > .hd {
+	font-size: 115%;
+	line-height: 110%;
+	}
+}
+@media screen and (max-width : 320px){
+	.home-intro > .hd {
+	font-size: 100%;
+	line-height: 105%;
 	}
 }
