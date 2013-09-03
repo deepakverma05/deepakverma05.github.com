@@ -1018,7 +1018,7 @@ right: -130px;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.header-home-boxes{
-	top:-300px;
+	top:-50%;
 	}
 }
 @media screen and (max-width : 1024px){
