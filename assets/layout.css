@@ -1025,9 +1025,8 @@ right: -130px;
 	}
 @media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2){
 .home-intro > .hd {
-	font-size: 15px;
-	line-height: 19px;
-	color:red;
+	font-size: 10px;
+	line-height: 13px;
 	}
 }
 @media screen and (max-width : 1024px){
