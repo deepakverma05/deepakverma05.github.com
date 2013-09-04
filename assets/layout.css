@@ -1023,10 +1023,11 @@ right: -130px;
 	.header-home-boxes {
 	width: 24%;
 	}
-@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2){
+@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
 .home-intro > .hd {
 	font-size: 10px;
 	line-height: 13px;
+	color:red;
 	}
 }
 @media screen and (max-width : 1024px){
