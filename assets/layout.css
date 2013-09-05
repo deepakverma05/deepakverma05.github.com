@@ -1023,12 +1023,7 @@ right: -130px;
 	.header-home-boxes {
 	width: 24%;
 	}
-@media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
-.home-intro > .hd {
-	font-size: 30px !important;
-	line-height: 33px !important;
-	}
-}
+
 @media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
 .home-intro > .hd {
 	font-size: 26px !important;
