@@ -1026,9 +1026,8 @@ right: -130px;
 
 @media screen and (device-width: 384px) and (device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait) {
 .home-intro > .hd {
-	font-size: 18px !important;
-	line-height: 21px !important;
-	color:red;
+	font-size: 22px !important;
+	line-height: 25px !important;
 	}
 }
 @media screen and (max-width : 1024px){
