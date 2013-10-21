@@ -12,9 +12,9 @@ input[type="checkbox"]{
 .more-section{
  display:none;
 }
-input[type="checkbox"] ~ .more-section{
+input[type="checkbox"] + .more-section{
  display:none;
 }
-input[type="checkbox"]:checked ~ .more-section{
+input[type="checkbox"]:checked + .more-section{
  display:block;
 }
