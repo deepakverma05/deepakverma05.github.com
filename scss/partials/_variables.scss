@@ -8,3 +8,11 @@ $color-4: #0a9581; // Gossamer
 // fonts 
 
 $primary-font: 'Source Sans Pro', sans-serif;
+@font-face {
+  font-family: wals-light;
+  src: url('../fonts/GT-Walsheim-Medium.woff');
+}
+@font-face {
+  font-family: wals-regular;
+  src: url('../fonts/GT-Walsheim-Regular.woff');
+}
