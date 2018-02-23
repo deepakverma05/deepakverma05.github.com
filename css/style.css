@@ -4,6 +4,21 @@
 @font-face {
   font-family: wals-regular;
   src: url("../fonts/GT-Walsheim-Regular.woff"); }
+#section0 {
+  background-color: #4fd0ea; }
+
+#section1 {
+  background-color: #6AB981; }
+
+#section2 {
+  background-color: #4BB7B9; }
+
+#section3 {
+  background-color: #A5D370; }
+
+#section4 {
+  background-color: #ccddff; }
+
 /* --------------------------------
 
 Stretchy Nav style - common to:
@@ -386,7 +401,7 @@ keyframes
 /* Section 2
  * --------------------------------------- */
 #section1 {
-  background-color: #2EBE21; }
+  transition: all 1s linear; }
 
 #section1 h1 {
   color: #fff; }
@@ -426,7 +441,9 @@ keyframes
   height: 100vh;
   overflow: hidden;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  background: url("../img/dirt.png");
+  transition: 1s all linear; }
   .content h1 {
     width: 45%;
     text-align: left;
@@ -555,18 +572,17 @@ keyframes
   opacity: 1;
   transition-delay: 0.5s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.fp-viewing-home-2 .reveal {
-  -webkit-animation: typing 2s steps(21, end), blink-caret 0.5s step-end infinite alternate;
-  animation: typing 2s steps(21, end), blink-caret 0.5s step-end infinite alternate; }
 
-.fp-viewing-store .classers-image {
+.fp-viewing-store .lcall-image {
   top: 100px;
   transition: all 1s ease-in-out;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.fp-viewing-store .classers-logo {
+.fp-viewing-store .lcall-logo {
   opacity: 1;
   transition-delay: 0.5s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.fp-viewing-store .content {
+  amination: background-gradient 1s; }
 
 .slide-cta {
   padding: 8px 20px;

@@ -17,6 +17,8 @@
   overflow: hidden;
   text-align: center;
   color:#fff;
+  background: url('../img/dirt.png');
+  transition: 1s all linear;
   h1 {
     width: 45%;
     text-align: left;
@@ -169,21 +171,20 @@
     transition-delay: 0.5s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .reveal{
-    -webkit-animation: typing 2s steps(21, end), blink-caret 0.5s step-end infinite alternate;
-    animation: typing 2s steps(21, end), blink-caret 0.5s step-end infinite alternate;
-  }
 }
 .fp-viewing-store{
-  .classers-image {
+  .lcall-image {
     top: 100px;
     transition: all 1s ease-in-out;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .classers-logo {
+  .lcall-logo {
     opacity: 1;
     transition-delay: 0.5s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .content{
+    amination:background-gradient 1s;
   }
 }
 .slide-cta {
@@ -207,8 +208,11 @@
     float: left;
   }
 }
-@keyframes textshow{
+#section1 {
 
+}
+@keyframes background-gradient{
+  0%{}
 }
 @-webkit-keyframes blink{from {opacity:0} }
 @keyframes blinkgo4{
