@@ -33,7 +33,7 @@ Stretchy Nav style - common to:
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background: #9acd91;
+  background:  #0072bb;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition: height 0.2s, box-shadow 0.2s;
   -moz-transition: height 0.2s, box-shadow 0.2s;
@@ -55,6 +55,7 @@ Stretchy Nav style - common to:
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  background-color: #0072bb;
   /* replace text with image */
   overflow: hidden;
   white-space: nowrap;
@@ -180,7 +181,7 @@ Stretchy Nav style - common to:
   -ms-transform: translateX(3px) translateY(-50%) scaleY(0);
   -o-transform: translateX(3px) translateY(-50%) scaleY(0);
   transform: translateX(3px) translateY(-50%) scaleY(0);
-  background-color: #0a9581;
+  background-color:  #0072bb;
 }
 .cd-stretchy-nav ul li:first-of-type a::after {
   /* change custom icon using image sprites */
