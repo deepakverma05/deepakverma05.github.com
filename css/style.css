@@ -434,6 +434,9 @@ keyframes
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 1px #555; }
 
+#fullpage {
+  visibility: hidden; }
+
 .content {
   position: relative;
   top: 0;
