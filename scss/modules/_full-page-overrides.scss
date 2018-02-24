@@ -336,7 +336,20 @@
     transform: scale(1) translateX(0%)
   }
 }
-
+@keyframes littlebrurySlide  {
+  0%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  50%{
+    transform: translate(0px,10px);
+    opacity: 0.5;
+  }
+  100%{
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
 .next-btn{
   position: fixed;
   bottom: 20px;
