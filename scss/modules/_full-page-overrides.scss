@@ -8,29 +8,6 @@
   }
   transition: all 0.3s ease-in-out;
 }
-#fullpage{
-  visibility: hidden;
-  opacity:0;
-  transition: all 1s linear;
-  &.page-show{
-    visibility: visible;
-    opacity:1;
-    transition: all 1s linear;
-  }
-}
-.loading{
-  height: 50px;
-  left:45%;
-  position: fixed;
-  top:50%;
-  width: 70px;
-}
-.loading svg rect {
-  fill: #FF6700;
-}
-.loading.hide{
-  display: none;
-}
 
 .content{
   position: relative;
