@@ -559,11 +559,11 @@ keyframes
   opacity: 0; }
 
 .books {
-  position: fixed;
+  position: absolute;
   bottom: -10px;
-  transform: rotate(0) scale(1);
-  right: -500px;
-  transition: all 1s linear;
+  transform: translate(200%, 100%);
+  opacity: 0;
+  transition: all 1s ease-out;
   z-index: 1; }
 
 .fp-viewing-home-2 .lcall-image {
@@ -591,9 +591,8 @@ keyframes
   animation: ANIMATE_TEXT 0.4s cubic-bezier(0.3, 2, 0.35, 1.45);
   animation-delay: 1s; }
 .fp-viewing-home-0 .books {
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  right: -55px;
-  transition-delay: 0.5s; }
+  transform: translate(200%);
+  opacity: 1; }
 
 .fp-viewing-home-1 .go4trainers-image {
   top: 100px;
@@ -667,27 +666,18 @@ keyframes
   30% {
     background-image: url(../img/go41.png);
     opacity: 1; }
-  33% {
-    background-image: url(../img/go41.png);
-    opacity: 0; }
   35% {
     background-image: url(../img/go42.png);
     opacity: 1; }
   65% {
     background-image: url(../img/go42.png);
     opacity: 1; }
-  67% {
-    background-image: url(../img/go42.png);
-    opacity: 0; }
   70% {
     background-image: url(../img/go43.png);
     opacity: 1; }
   95% {
     background-image: url(../img/go43.png);
     opacity: 1; }
-  97% {
-    background-image: url(../img/go43.png);
-    opacity: 0; }
   100% {
     background-image: url(../img/go41.png);
     opacity: 1; } }
@@ -698,44 +688,73 @@ keyframes
   20% {
     background-image: url(../img/cl1.png);
     opacity: 1; }
-  23% {
-    background-image: url(../img/cl1.png);
-    opacity: 0; }
   25% {
     background-image: url(../img/cl2.png);
     opacity: 1; }
   45% {
     background-image: url(../img/cl2.png);
     opacity: 1; }
-  47% {
-    background-image: url(../img/cl2.png);
-    opacity: 0; }
   50% {
     background-image: url(../img/cl3.png);
     opacity: 1; }
   70% {
     background-image: url(../img/cl3.png);
     opacity: 1; }
-  73% {
-    background-image: url(../img/cl3.png);
-    opacity: 0; }
   75% {
     background-image: url(../img/cl4.png);
     opacity: 1; }
   95% {
     background-image: url(../img/cl4.png);
     opacity: 1; }
-  97% {
-    background-image: url(../img/cl4.png);
-    opacity: 0; }
   100% {
     background-image: url(../img/cl1.png);
     opacity: 1; } }
+@keyframes move-arrow {
+  0% {
+    transform: translate(0px, 0px) rotate(45deg);
+    animation-timing-function: ease-in; }
+  100% {
+    transform: translate(0px, 25px) rotate(45deg); } }
 @keyframes ANIMATE_TEXT {
   from {
     transform: scale(0) translateX(-40%); }
   to {
     transform: scale(1) translateX(0%); } }
+.next-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  cursor: pointer; }
+  .next-btn .arrow {
+    margin-top: 1vh;
+    padding-bottom: 1vh; }
+    .next-btn .arrow i {
+      position: relative;
+      left: 0;
+      top: 0;
+      border: solid #348C9B;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 15px; }
+    .next-btn .arrow .down {
+      transform: rotate(45deg);
+      animation: move-arrow 1s infinite alternate; }
+    .next-btn .arrow:hover .down {
+      animation: none;
+      transform: scale(1.1) rotate(45deg); }
+
+.loading {
+  font-size: 20px;
+  display: block;
+  width: 10%;
+  height: 50px;
+  left: 45%;
+  position: fixed;
+  top: 50%; }
+
+.loading svg rect {
+  fill: #FF6700; }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
