@@ -435,7 +435,26 @@ keyframes
     box-shadow: 0px 0px 1px #555; }
 
 #fullpage {
-  visibility: hidden; }
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s linear; }
+  #fullpage.page-show {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear; }
+
+.loading {
+  height: 50px;
+  left: 45%;
+  position: fixed;
+  top: 50%;
+  width: 70px; }
+
+.loading svg rect {
+  fill: #FF6700; }
+
+.loading.hide {
+  display: none; }
 
 .content {
   position: relative;
@@ -745,18 +764,6 @@ keyframes
     .next-btn .arrow:hover .down {
       animation: none;
       transform: scale(1.1) rotate(45deg); }
-
-.loading {
-  font-size: 20px;
-  display: block;
-  width: 10%;
-  height: 50px;
-  left: 45%;
-  position: fixed;
-  top: 50%; }
-
-.loading svg rect {
-  fill: #FF6700; }
 
 *, *::after, *::before {
   box-sizing: border-box; }

@@ -181,8 +181,8 @@
             'menu': '#menu',
         });
         $(window).load(function() {
-            $( "#fullpage" ).css( "visibility", "visible" );
-            $( ".loading" ).css( "visibility", "hidden" );
+            $( "#fullpage" ).addClass("page-show");
+            $( ".loading" ).hide();
         });
         if( $('.cd-stretchy-nav').length > 0 ) {
             var stretchyNavs = $('.cd-stretchy-nav');
