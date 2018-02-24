@@ -1,0 +1,46 @@
+.map{
+  background: url(../img/map.png);
+  width: 50%;
+  background-size: auto 100%;
+  background-position: center 50px;
+  height: 100vh;
+}
+.address-wrapper{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  top: 0;
+  padding-top: 150px;
+  text-align: center;
+  .site-contact-logo{
+    background: url(../img/logo.png);
+    height: 100px;
+    background-size: 150px auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  h2{
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: 'wals-light';
+  }
+  p{
+    width: 60%;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 32px;
+  }
+  .telephone{
+    padding-top:20px;
+  }
+  .copyright-info{
+    font-size: 12px;
+    position: absolute;
+    bottom:10px;
+    right:0;
+    font-family: 'wals-light';
+  }
+}

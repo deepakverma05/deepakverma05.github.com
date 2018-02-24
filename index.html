@@ -160,14 +160,25 @@
 		</div>
 		<div class="section" id="section4">
 			<div class="content">
-				<h1>last</h1>
-				<p>contact content here</p>
+				<div class="map"></div>
+				<div class="address-wrapper">
+					<div class="site-contact-logo"></div>
+					<h2>HMW Communications</h2>
+					<p>IndiQube - Alpha, 5th Floor, B4, No 293/154/172, Outer Ring Road, Kadubeesanahalli, Bangalore - 560103, Karnataka, India</p>
+					<p class="telephone"><span type="tel">+91-9591270077</span> / <a href="mailto:info@hmwcomm.com">info@hmwcomm.com</a></p>
+					<p class="copyright-info">Copyrights © 2018 HMW Communications Private Limited</p>
+				</div>
 			</div>
 		</div>
 	</main>
 <div class="next-btn">
 	<div class="arrow">
 		<i class="down"></i>
+	</div>
+</div>
+<div class="prev-btn">
+	<div class="arrow">
+		<i class="up"></i>
 	</div>
 </div>
 <div class="loading"><img src="img/three-dots.svg"></div>
@@ -199,6 +210,9 @@
         }
         $(document).on('click', '.next-btn', function(){
             $.fn.fullpage.moveSectionDown();
+        });
+        $(document).on('click', '.prev-btn', function(){
+            $.fn.fullpage.moveTo(1);
         });
     });
 </script>

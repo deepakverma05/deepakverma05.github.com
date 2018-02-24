@@ -19,6 +19,8 @@
   text-align: center;
   color:#fff;
   background: url('../img/dirt.png');
+  background-position: center center;
+  //animation: dirtmove 2s infinite;
   &-heading {
     width: 45%;
     text-align: left;
@@ -338,7 +340,7 @@
 .next-btn{
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: calc(50% - 17px);
   cursor: pointer;
   .arrow {
     margin-top: 1vh;
@@ -355,7 +357,6 @@
     .down {
       transform: rotate(45deg);
       animation: move-arrow 1s infinite alternate;
-
     }
     &:hover{
       .down {
@@ -365,4 +366,35 @@
     }
   }
 }
-
+.prev-btn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: calc(50% - 17px);
+  cursor: pointer;
+  .arrow {
+    margin-top: 1vh;
+    padding-bottom: 1vh;
+    i {
+      position: relative;
+      left: 0;
+      top: 0;
+      border: solid #348C9B;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 15px;
+    }
+    .up {
+      transform: rotate(-135deg);
+      animation: none;
+    }
+  }
+}
+.fp-viewing-contact{
+  .next-btn{
+    display: none;
+  }
+  .prev-btn {
+    display: block;
+  }
+}
