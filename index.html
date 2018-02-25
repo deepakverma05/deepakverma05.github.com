@@ -23,7 +23,6 @@
 		<ul id="menu">
 			<li data-menuanchor="home"><a href="#home" class="active"><span>Home</span></a></li>
 			<li data-menuanchor="store"><a href="#store"><span>Store</span></a></li>
-			<li data-menuanchor="aboutus"><a href="#aboutus"><span>About Us</span></a></li>
 			<li data-menuanchor="services"><a href="#services"><span>Services</span></a></li>
 			<li data-menuanchor="contact"><a href="#contact"><span>Contact Us</span></a></li>
 		</ul>
@@ -42,7 +41,7 @@
 					<div class="content-body">
 						<div class="content-logo classers-logo"></div>
 						<h1 class="content-heading jumpin-animation">CLASSERS</h1>
-						<p class="content-text text-slider1">
+						<p id="text-slider1" class="content-text text-slider1">
 							<span class="text-slider-item ">App for all those Classers who go to classes for Teaching or Learning</span>
 							<span class="text-slider-item ">We need to decide the text. it should be around 2-3 lines longs</span>
 							<span class="text-slider-item ">This is text number 3. We need to decide the text. it should be around 2-3 lines long</span>
@@ -72,7 +71,7 @@
 					<div class="content-body">
 						<div class="content-logo go4trainers-logo"></div>
 						<h1 class="content-heading slidein-animation">GO4TRAINERS</h1>
-						<p class="content-text text-slider2">
+						<p id="text-slider2" class="content-text text-slider2">
 							<span class="text-slider-item">Search and Find Trainers, Coaches, Teachers, Courses and Classes for Dance, Music, Arts, Sports (Indoor / Outdoor), Yoga, Fitness & Gym.</span>
 							<span class="text-slider-item">We need to decide the text. it should be around 2-3 lines longs</span>
 							<span class="text-slider-item">This is text number 3. We need to decide the text. it should be around 2-3 lines long</span>
@@ -146,16 +145,24 @@
 			</div>
 		</div>
 
-		<div class="section" id="section2">
-			<div class="content">
-				<h1>third</h1>
-				<p>Services content here</p>
-			</div>
-		</div>
+
 		<div class="section" id="section3">
-			<div class="content">
-				<h1>fourth</h1>
-				<p>Store content here</p>
+			<div class="content services-content">
+				<h1 class="services-heading">Services</h1>
+				<div class="services-text-slider">
+					<p class="service-text-animate">We offer our iOS and Android Application  development expertise to our customers. We can give your idea a shape of IOS or Android APP.</p>
+					<p class="service-text-animate2">We have expertise in UI designing, Android development, IOS development, PHP, Web Services, MySQL, Payment gateway Integration , Testing and deployment of Apps.</p>
+				</div>
+				<div class="services-wrapper">
+					<ul class="service-list">
+						<li class="service-animation1"><div class="service">IOS</div></li>
+						<li class="service-animation2"><div class="service">ANDRIOD</div></li>
+						<li class="service-animation3"><div class="service">PHP/MYSQL</div></li>
+						<li class="service-animation4 break-line"><div class="service">WEB SERVICES</div></li>
+						<li class="service-animation5"><div class="service">Service name</div></li>
+					</ul>
+				</div>
+				<div class="services-image"></div>
 			</div>
 		</div>
 		<div class="section" id="section4">
@@ -188,7 +195,7 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             'css3':true,
-            'anchors': ['home', 'store', 'aboutus', 'services', 'contact'],
+            'anchors': ['home', 'store', 'services', 'contact'],
             'menu': '#menu',
         });
         if( $('.cd-stretchy-nav').length > 0 ) {
@@ -214,15 +221,18 @@
         $(document).on('click', '.prev-btn', function(){
             $.fn.fullpage.moveTo(1);
         });
+        $(document).on('click', '.site-logo', function(){
+            $.fn.fullpage.moveTo(1);
+        });
     });
 </script>
 <script>
     $(document).ready(function () {
-        $('.text-slider1').textSlider({
+        $('#text-slider1').textSlider({
             timeout: 4000,
             slideTime: 500
         });
-        $('.text-slider2').textSlider({
+        $('#text-slider2').textSlider({
             timeout: 4000,
             slideTime: 500
         });
