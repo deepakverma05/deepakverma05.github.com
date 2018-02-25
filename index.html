@@ -22,7 +22,7 @@
 		</a>
 		<ul id="menu">
 			<li data-menuanchor="home"><a href="#home" class="active"><span>Home</span></a></li>
-			<li data-menuanchor="store"><a href="#store"><span>Store</span></a></li>
+			<li data-menuanchor="aboutus"><a href="#aboutus"><span>About Us</span></a></li>
 			<li data-menuanchor="services"><a href="#services"><span>Services</span></a></li>
 			<li data-menuanchor="contact"><a href="#contact"><span>Contact Us</span></a></li>
 		</ul>
@@ -40,14 +40,14 @@
 					</div>
 					<div class="content-body">
 						<div class="content-logo classers-logo"></div>
-						<h1 class="content-heading jumpin-animation">CLASSERS</h1>
+						<h1 class="content-heading content-heading-classers jumpin-animation">CLASSERS</h1>
 						<p id="text-slider1" class="content-text text-slider1">
 							<span class="text-slider-item ">App for all those Classers who go to classes for Teaching or Learning</span>
 							<span class="text-slider-item ">We need to decide the text. it should be around 2-3 lines longs</span>
 							<span class="text-slider-item ">This is text number 3. We need to decide the text. it should be around 2-3 lines long</span>
 							<span class="text-slider-item ">We need to decide the text. it should be around 2-3 lines longs. Text4</span>
 						</p>
-						<a class="read-more-link" href="#store">Read more..</a>
+						<!--<a class="read-more-link" href="#store">Read more..</a>-->
 						<div class="slide-cta">
 							<span>Get the app</span>
 							<a class="slide-cta-button hover-fill js-ga-track" target="_blank" href="https://play.google.com/store/apps/details?id=com.hmw.classers" data-ga-label="Android">
@@ -77,7 +77,7 @@
 							<span class="text-slider-item">This is text number 3. We need to decide the text. it should be around 2-3 lines long</span>
 							<span class="text-slider-item">We need to decide the text. it should be around 2-3 lines longs. Text4</span>
 						</p>
-						<a class="read-more-link" href="#store">Read more..</a>
+						<!--<a class="read-more-link" href="#store">Read more..</a>-->
 						<div class="slide-cta">
 							<span>Get the app</span>
 							<a class="slide-cta-button hover-fill js-ga-track" target="_blank" href="https://play.google.com/store/apps/details?id=com.hmw.go4trainers&hl=en" data-ga-label="Android">
@@ -99,10 +99,10 @@
 						<div class="image-slider lcall-slider"></div>
 					</div>
 					<div class="content-body">
-						<h1 class="content-heading">LCALL</h1>
 						<div class="content-logo lcall-logo"></div>
+						<h1 class="content-heading">LCALL</h1>
 						<p class="content-text">An easy way to share and track exact GPS locations of caller and receiver during mobile phone calls in real time. </p>
-						<a class="read-more-link" href="#store">Read more..</a>
+						<!--<a class="read-more-link" href="#store">Read more..</a>-->
 						<div class="slide-cta">
 							<span>Get the app</span>
 							<a class="slide-cta-button hover-fill js-ga-track" target="_blank" href="https://play.google.com/store/apps/details?id=com.hmw.lcall&hl=en" data-ga-label="Android">
@@ -133,15 +133,15 @@
 			</div>
 		</div>
 		<div class="section " id="section1">
-			<div class="content">
-				<div class="content-image">
-					<div class="image-slider lcall-slider"></div>
+			<div class="content aboutus">
+				<div class="about-us-wrapper">
+					<h1 class="content-heading about-us-heading">Who are we</h1>
+					<p class="content-text about-us-text">We are a startup based in Bangalore, specialized in mobile application software and services.</p>
+					<p class="content-text about-us-text2">We come from telecommunication and cellular industry with deep insight into cellular wireless technologies and embedded platforms, which lays solid foundation for the mobile application development.</p>
+					<p class="content-text about-us-text3">	Our team make world class iOS and Android mobile applications.</p>
 				</div>
-				<div class="content-body">
-					<h1 class="content-heading">Store</h1>
-					<p class="content-text">store content here</p>
-					<p class="content-text">more content</p>
-				</div>
+				<div class="about-image1"></div>
+				<div class="about-image2"></div>
 			</div>
 		</div>
 
@@ -172,7 +172,7 @@
 					<div class="site-contact-logo"></div>
 					<h2>HMW Communications</h2>
 					<p>IndiQube - Alpha, 5th Floor, B4, No 293/154/172, Outer Ring Road, Kadubeesanahalli, Bangalore - 560103, Karnataka, India</p>
-					<p class="telephone"><span type="tel">+91-9591270077</span> / <a href="mailto:info@hmwcomm.com">info@hmwcomm.com</a></p>
+					<a href="mailto:info@hmwcomm.com">info@hmwcomm.com</a></p>
 					<p class="copyright-info">Copyrights © 2018 HMW Communications Private Limited</p>
 				</div>
 			</div>
@@ -195,7 +195,7 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             'css3':true,
-            'anchors': ['home', 'store', 'services', 'contact'],
+            'anchors': ['home','aboutus', 'services', 'contact'],
             'menu': '#menu',
         });
         if( $('.cd-stretchy-nav').length > 0 ) {

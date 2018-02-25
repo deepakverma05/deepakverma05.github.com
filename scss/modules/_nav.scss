@@ -16,7 +16,7 @@ Stretchy Nav style - common to:
   top: 20px;
   left: 70px;
   background-size: auto 100%;
-  cursor: pointer;
+  cursor:pointer;
 }
 .cd-stretchy-nav {
   position: fixed;
@@ -56,7 +56,7 @@ Stretchy Nav style - common to:
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #0072bb;
+  background-color: #fff;
   /* replace text with image */
   overflow: hidden;
   white-space: nowrap;
@@ -68,7 +68,7 @@ Stretchy Nav style - common to:
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #0072bb;
 }
 .cd-nav-trigger span {
   /* middle line of the hamburger icon */

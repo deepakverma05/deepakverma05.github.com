@@ -76,7 +76,7 @@ Stretchy Nav style - common to:
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #0072bb;
+  background-color: #fff;
   /* replace text with image */
   overflow: hidden;
   white-space: nowrap;
@@ -88,7 +88,7 @@ Stretchy Nav style - common to:
   position: absolute;
   width: 16px;
   height: 2px;
-  background-color: #ffffff; }
+  background-color: #0072bb; }
 
 .cd-nav-trigger span {
   /* middle line of the hamburger icon */
@@ -405,13 +405,6 @@ keyframes
 #section1 {
   transition: all 1s linear; }
 
-#section1 h1 {
-  color: #fff; }
-
-#section1 p {
-  color: #fff;
-  opacity: 1; }
-
 /* Section 3
  * --------------------------------------- */
 #section2 {
@@ -445,7 +438,8 @@ keyframes
   text-align: center;
   color: #fff;
   background: url("../img/dirt.png");
-  background-position: center center; }
+  background-position: center center;
+  z-index: 1; }
   .content-heading {
     width: 45%;
     text-align: left;
@@ -524,7 +518,8 @@ keyframes
 .classers-logo {
   background-image: url(../img/classers.png);
   background-size: 100% auto;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 25px; }
 
 .classers-image {
   background-image: url(../img/device_pixel.png); }
@@ -745,9 +740,9 @@ keyframes
       left: 0;
       top: 0;
       border: solid #348C9B;
-      border-width: 0 4px 4px 0;
+      border-width: 0 3px 3px 0;
       display: inline-block;
-      padding: 15px; }
+      padding: 10px; }
     .next-btn .arrow .down {
       transform: rotate(45deg);
       animation: move-arrow 1s infinite alternate; }
@@ -865,6 +860,11 @@ keyframes
   text-shadow: 1px 1px 1px #555;
   padding: 0px 0 20px 0;
   color: #0072bb; }
+
+.services-wrapper {
+  display: block;
+  clear: both;
+  padding-top: 20px; }
 
 .service {
   display: inline-block;
@@ -1026,6 +1026,69 @@ keyframes
   100% {
     transform: translate(0px, 0px);
     opacity: 1; } }
+.about-us-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  max-width: 960px; }
+.about-us-heading {
+  width: 100%;
+  text-align: center;
+  padding: 0px 0 30px 0;
+  color: #0072bb;
+  transform: translateX(-100%); }
+.about-us-text, .about-us-text2, .about-us-text3 {
+  width: 100%;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  line-height: 30px; }
+
+.about-image1 {
+  background: url(../img/aboutus.png);
+  width: 500px;
+  height: 327px;
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  right: 10px;
+  opacity: 0.8;
+  transform: translateX(500px);
+  transition: all 1s ease-in-out; }
+
+.about-image2 {
+  background: url(../img/aboutus2.png);
+  width: 500px;
+  height: 300px;
+  top: 200px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  transform: translateX(-500px);
+  transition: all 1s ease-in-out; }
+
+.fp-viewing-aboutus .about-us-heading {
+  transform: translateX(0%);
+  transition: all 0.6s ease-in-out;
+  animation-delay: 0.5s; }
+.fp-viewing-aboutus .about-us-text {
+  animation: littlebrurySlide 0.4s cubic-bezier(0.3, 2, 0.35, 1.45);
+  animation-delay: 1s; }
+.fp-viewing-aboutus .about-us-text2 {
+  animation: littlebrurySlide 0.4s cubic-bezier(0.3, 2, 0.35, 1.45);
+  animation-delay: 1.2s; }
+.fp-viewing-aboutus .about-us-text3 {
+  animation: littlebrurySlide 0.4s cubic-bezier(0.3, 2, 0.35, 1.45);
+  animation-delay: 1.5s; }
+.fp-viewing-aboutus .about-image1 {
+  transform: translatex(0px);
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.5s; }
+.fp-viewing-aboutus .about-image2 {
+  transform: translatex(0px);
+  transition: all 1s ease-in-out; }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
